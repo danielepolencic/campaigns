@@ -1,0 +1,180 @@
+/*
+A powerful grid system that degrades gracefully in mobile devices.
+
+:hover             - Subtle hover highlight.
+.stars-given       - A highlight indicating you've already given a star.
+.stars-given:hover - Subtle hover highlight on top of stars-given styling.
+.disabled          - Dims the button to indicate it cannot be used.
+
+Styleguide 1.1.
+*/
+
+.container           { position: relative; width: 960px; padding: 0; margin: 0 auto; }
+
+.column,
+.columns             { float: left; display: inline;
+                       margin-left: 10px; margin-right: 10px; }
+.column.alpha, 
+.columns.alpha       { margin-left: 0; }
+.column.omega,
+.columns.omega       { margin-right: 0; }
+
+.one.column          { width: 60px; }
+.one.columns         { width: 60px; }
+.two.columns         { width: 140px; }
+.three.columns       { width: 220px; }
+.four.columns        { width: 300px; }
+.five.columns        { width: 380px; }
+.six.columns         { width: 460px; }
+.seven.columns       { width: 540px; }
+.eight.columns       { width: 620px; }
+.nine.columns        { width: 700px; }
+.ten.columns         { width: 780px; }
+.eleven.columns      { width: 860px; }
+.twelve.columns      { width: 940px; }
+
+.offset-by-one       { padding-left: 60px;  }
+.offset-by-two       { padding-left: 120px; }
+.offset-by-three     { padding-left: 180px; }
+.offset-by-four      { padding-left: 240px; }
+.offset-by-five      { padding-left: 300px; }
+.offset-by-six       { padding-left: 360px; }
+.offset-by-seven     { padding-left: 420px; }
+.offset-by-eight     { padding-left: 480px; }
+.offset-by-nine      { padding-left: 540px; }
+.offset-by-ten       { padding-left: 600px; }
+.offset-by-eleven    { padding-left: 660px; }
+.offset-by-twelve    { padding-left: 720px; }
+.offset-by-thirteen  { padding-left: 780px; }
+.offset-by-fourteen  { padding-left: 840px; }
+.offset-by-fifteen   { padding-left: 900px; }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+   
+   .container           { width: 768px; }
+
+   .one.column          { width: 44px;  }
+   .two.columns         { width: 108px; }
+   .three.columns       { width: 172px; }
+   .four.columns        { width: 236px; }
+   .five.columns        { width: 300px; }
+   .six.columns         { width: 364px; }
+   .seven.columns       { width: 428px; }
+   .eight.columns       { width: 492px; }
+   .nine.columns        { width: 556px; }
+   .ten.columns         { width: 620px; }
+   .eleven.columns      { width: 684px; }
+   .twelve.columns      { width: 748px; }
+
+   .offset-by-one       { padding-left: 64px;  }
+   .offset-by-two       { padding-left: 128px; }
+   .offset-by-three     { padding-left: 192px; }
+   .offset-by-four      { padding-left: 256px; }
+   .offset-by-five      { padding-left: 320px; }
+   .offset-by-six       { padding-left: 384px; }
+   .offset-by-seven     { padding-left: 448px; }
+   .offset-by-eight     { padding-left: 512px; }
+   .offset-by-nine      { padding-left: 576px; }
+   .offset-by-ten       { padding-left: 640px; }
+   .offset-by-eleven    { padding-left: 704px; }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+   .container           { width: 300px; }
+   .column,
+   .columns             { margin-left: 0; margin-right: 0; }
+
+   .one.column,
+   .two.columns,
+   .three.columns,
+   .four.columns,
+   .five.columns,
+   .six.columns,
+   .seven.columns,
+   .eight.columns,
+   .nine.columns,
+   .ten.columns,
+   .eleven.columns,
+   .twelve.columns,
+   .one-third.column,
+   .two-thirds.column   { width: 300px; }
+
+   .offset-by-one,
+   .offset-by-two,
+   .offset-by-three,
+   .offset-by-four,
+   .offset-by-five,
+   .offset-by-six,
+   .offset-by-seven,
+   .offset-by-eight,
+   .offset-by-nine,
+   .offset-by-ten,
+   .offset-by-eleven    { padding-left: 0; }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+   .container           { width: 420px; }
+
+   .one.column,
+   .two.columns,
+   .three.columns,
+   .four.columns,
+   .five.columns,
+   .six.columns,
+   .seven.columns,
+   .eight.columns,
+   .nine.columns,
+   .ten.columns,
+   .eleven.columns,
+   .twelve.columns,
+   .one-third.column,
+   .two-thirds.column   { width: 420px; }
+
+}
+
+.container:after,
+.clearfix:after      { clear: both; }
+
+.container:after,
+.clearfix:before,
+.clearfix:after      { content: '\0020'; display: block; height: 0; visibility: hidden; }
+      
+.clearfix:after,
+.clearfix:before     { overflow: hidden; width: 0; }
+.clearfix            { *zoom: 1; }
+
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; height: 0; }
+
+
+.show-on-phones      { display: none !important; }	
+.show-on-tablets     { display: none !important; }
+.show-on-desktops    { display: block; }
+
+.hide-on-phones      { display: block !important; }	
+.hide-on-tablets     { display: block !important; }
+.hide-on-desktops    { display: none; }
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.hide-on-phones   { display: block !important; }
+	.hide-on-tablets  { display: none !important; }
+	.hide-on-desktops { display: block !important; }
+
+	.show-on-phones   { display: none !important; }
+	.show-on-tablets  { display: block !important; }
+	.show-on-desktops { display: none !important; }
+}
+
+@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+	.hide-on-phones   { display: none !important; }
+	.hide-on-tablets  { display: block !important; }
+	.hide-on-desktops { display: block !important; }
+
+	.show-on-phones   { display: block !important; }
+	.show-on-tablets  { display: none !important; }
+	.show-on-desktops { display: none !important; }
+}

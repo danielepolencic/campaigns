@@ -1,0 +1,6 @@
+public/node_modules/
+public/tmp/
+public/js/main.pkg.js
+public/js/main.pkg.min.js
+public/css/all.css
+public/css/all.min.css

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Playous</title>
+  <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+  <div class="navbar">
+    <img src="images/logo.png" alt="Playous" class="pam" />
+  </div>
+  <div class="bg">
+    <img src="/images/bg.jpg" alt="" class="" />
+  </div>
+  <div class="container">
+
+    <div class="slide two active">
+      <div class="ten columns offset-by-one">
+        <div class="header pam">
+          <h1 class="mhn"><strong class="highlighted-white">The design sales begin in 53 days</strong></h1>
+          <p class="mhn highlighted-white">We’ve received an invite request. Membership are approved based on priority access.</p>
+        </div>
+        <div class="bg-translucent reference-relative">
+          <div class="six columns alpha bg-translucent">
+            <div class="pal mam">
+              <h1 class="mhn"><strong class="highlighted-white">Want priority Access?</strong></h1>
+              <p class="mhn mtl">Get early access by <strong class="highlighted-white">inviting at lest 3 friends</strong>. The more friends you invite, the sonner you’ll get access, plus exceptional benefits!</p>
+              <p class="mhn mtm">Copy/paste the URL below into <strong class="highlighted-white">Twitter</strong>, <strong class="highlighted-white">Facebook</strong> or <strong class="highlighted-white">in an email</strong>:</p>
+              <div class="line mvm">
+                <div class="unit size1of2">
+                  <input type="url" value="" class="mvs" />
+                </div>
+                <div class="unit size1of2 lastUnit">
+                  <p class="middle">share <span class="icon facebook middle"></span> or <span class="icon twitter middle"></span></p>
+                </div>
+              </div>
+              <h2 class="mhn mtl"><strong class="highlighted-white">Invite Friends</strong></h2>
+              <input class="mvm" type="text" placeholder="Enter email addresses separated by commas" value="" />
+              <div>
+                <a href="#previewmessage">Preview Message</a>
+              </div>
+              <div class="button red mtm">
+                <span>Send</span>
+              </div>
+            </div>
+          </div>
+          <div class="four columns omega">
+            <div class="phm pvl mvm mln mrs">
+              <h2 class="mhn">
+                <strong class="highlighted-white">You've earned 35$</strong> <span class="p">as your Credits.</span>
+              </h2>
+              <div class="progress-bar first-step pls prl pvm">
+                <div class="progress">
+                  <div class="line">
+                    <div class="unit size1of4 txtC step-one">
+                      <div class="placeholder"></div>
+                    </div>
+                    <div class="unit size1of4 txtC step-two">
+                      <div class="placeholder"></div>
+                    </div>
+                    <div class="unit size1of4 txtC step-three">
+                      <div class="placeholder"></div>
+                    </div>
+                    <div class="unit size1of4 lastUnit txtC step-four">
+                      <div class="placeholder"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="unit size1of4 txtC pvs step-one">
+                    <small class="level"><span class="pts">Priority</span></small>
+                  </div>
+                  <div class="unit size1of4 txtC pvs step-two">
+                    <small class="level">Founding</small>
+                  </div>
+                  <div class="unit size1of4 txtC pvs step-three">
+                    <small class="level">VIP</small>
+                  </div>
+                  <div class="unit size1of4 lastUnit txtC pvs step-four">
+                    <small class="level">Prime</small>
+                  </div>
+                </div>
+              </div>
+              <h2 class="mhn mts">
+                <strong>Access Levels</strong>
+              </h2>
+              <p class="mhn mvs"><strong class="highlighted-white">Priority List</strong>. 3 or more friends have also requested access.</p>
+              <p class="mhn mvs"><strong class="highlighted-white">Founding Member</strong>. 10 or more friends have also requested access. 30$ credit on first purchase.</p>
+              <p class="mhn mvs"><strong class="highlighted-white">VIP Member</strong>. 25 or more friends have also requested access. 50$ credit.</p>
+              <p class="mhn mvs"><strong class="highlighted-white">Prime time player</strong>. 55 or more friends have also requested access. Free shipping for 6 month.</p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+
+  </div>
+  <script type="text/javascript">
+    Playous = {
+      <% if production? %>
+      "domain"      : "http://playo.us",
+      <% else %>
+      "domain"      : "http://playous.dev",
+      <% end %>
+      "url_hash"    : "<%= @url_hash %>"
+    }
+  </script>
+  <script type="text/javascript" charset="utf-8" src="js/main.pkg.js"></script>
+</body>
+</html>
