@@ -1,5 +1,0 @@
-/* ====== media (requires mod.css) ====== */
-.media               { overflow:hidden; *overflow:visible; zoom:1; }
-.media .image.left,
-.media .image        { float: left; margin-right: 5px; }
-.media .image.right  { float: right; margin-left: 5px; }

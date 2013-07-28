@@ -2,16 +2,13 @@
 source 'http://rubygems.org'
 
 gem 'sinatra'
-gem 'datamapper'
-gem 'dm-sqlite-adapter'
-gem 'rspec'
-gem 'rack'
-gem 'rack-test'
+gem 'sinatra-contrib'
+gem 'rack-contrib'
+gem "mongoid"
 gem 'mail'
+gem 'multi_json'
 
-gem 'guard'
-gem 'guard-rspec'
-gem 'guard-bundler'
-gem 'guard-livereload'
-gem 'guard-pow'
-gem 'guard-coffeescript'
+group :development do
+  gem 'rspec'
+  gem 'rack-test'
+end

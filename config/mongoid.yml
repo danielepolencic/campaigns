@@ -1,0 +1,6 @@
+development:
+  sessions:
+    default:
+      database: campaigns
+      hosts:
+        - localhost:27017
