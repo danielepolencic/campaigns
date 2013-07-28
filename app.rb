@@ -14,7 +14,7 @@ use Rack::JSONP
 
 set :json_encoder, :to_json
 
-Mongoid.load!(settings.mongoid.to_s)
+Mongoid.load!('config/mongoid.yml')
 
 get '/' do
   erb :usage
